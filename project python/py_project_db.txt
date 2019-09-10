@@ -1,0 +1,19 @@
+create database bankdb;
+use bankdb;
+
+create table accmaster
+(
+accno integer primary key auto_increment,
+name varchar(30),
+balance integer
+)auto_increment=1000;
+
+create table trans
+(
+transid integer primary key auto_increment,
+transdate timestamp default CURRENT_TIMESTAMP,
+accno integer ,
+transtype enum('d','w'),
+amount integer
+);
+

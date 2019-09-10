@@ -1,0 +1,29 @@
+
+Extract the directory oship-1.0a5 from oship-1.0a5-linux-x86_64.zip into your home directory
+
+cd oship-1.0a5
+
+source bin/activate
+
+cd oship
+
+python bootstrap.py
+
+bin/buildout
+
+bin/oship-ctl fg
+
+In your browser go to http://localhost:8080
+Login with the defaults:
+user = admin
+password = admin
+
+We arrive at the <add application page>;
+type 'oship' (without quotes) into the oship.app.oship box and click the
+`Create`-button.
+
+Then, click on the oship (oship) link.
+We will now arrive at OSHIP's Main Management Screen with the address http://localhost:8080/oship.
+
+The remaining instructions are there.
+
